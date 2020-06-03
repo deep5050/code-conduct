@@ -4,6 +4,10 @@
 <p align="center" ><h1 align="center"> code-conduct </h1></p>
 </div>
 <p align="center"> Exports Code-Of-conduct In <b>28</b> Different Languages :)</p>
+<p align="center"><a href="https://github.com/deep5050/code-conduct/actions?query=workflow%3Anpm-publish"><img src="https://img.shields.io/github/workflow/status/deep5050/code-conduct/npm-publish?label=npm-publish&logo=github&style=for-the-badge"></a></p>
+
+
+<p align="center"> <a href="https://www.npmjs.com/package/code-conduct"><img alt="npm" src="https://img.shields.io/npm/dt/code-conduct?color=red&label=INSTALL&logo=npm&style=for-the-badge"></a></p>
 
 ## Supported Languages
 1. - [x] Bengali
