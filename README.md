@@ -48,37 +48,30 @@ const coc = require('code-conduct');
 `@returns` code of conduct of the language id
 
 ```js
-console.log(coc.iw());
+console.log(coc.en());
 /* =>
+# Contributor Covenant Code of Conduct
 
-# קוד התנהגות לתורם
+## Our Pledge
 
-## ההתחייבות שלנו
+In the interest of fostering an open and welcoming environment, we as
+contributors and maintainers pledge to making participation in our project and
+our community a harassment-free experience for everyone, regardless of age, body
+size, disability, ethnicity, gender identity and expression, level of experience,
+nationality, personal appearance, race, religion, or sexual identity and
+orientation.
 
-לטובת עידוד של סביבה פתוחה ומקבלת, אנחנו בתור התורמים והמתחזקים מתחייבים להפוך 
-את ההשתתפות בפרויקט שלנו ואת הקהילה שלנו לחוויה נטולת הטרדות לכל אדם באשר הוא
-ללא הבדלי גיל, גודל גוף, מגבלות פיזיות, מוצא אתני, הזדהות מגדרית, רמת ניסיון, לאום, 
-מראה חיצוני, גזע, דת, זהות ונטיה מינית.
+## Our Standards
 
-## הסטנדרטים שלנו
+Examples of behavior that contributes to creating a positive environment
+include:
 
-דוגמאות להתנהגות התורמת לסביבה חיובית כוללות:
-
-* שימוש בשפה מקבלת ומברכת
-* כיבוד נקודות מבט וחוויות שונות
-* קבלה של ביקורת בונה בהבנה
-* התמקדות במה שהכי טוב לקהילה
-* הפגנת אמפתיה כלפי חברים אחרים מהקהילה
-
-דוגמאות להתנהגות בלתי הולמת כוללות:
-
-* שימוש בשפה מינית, תמונות גסות, או הטרדה מינית
-* הטרלה, תגובות מעליבות/משפילות, תקיפה אישית או פוליטית
-* הטרדה פומבית או אישית
-* פרסום מידע אישי של אחרים, כגון כתובת פיזית או אלקטרונית, בלי אישור מפורש
-* התנהגות כלשהי שאינה סבירה בסביבת עבודה מקצועית
-
-## האחריויות שלנו......... */ 
+* Using welcoming and inclusive language
+* Being respectful of differing viewpoints and experiences
+* Gracefully accepting constructive criticism
+* Focusing on what is best for the community
+* Showing empathy towards other community members .........
+*/ 
 ```
 
 ### get_coc(language_id)
