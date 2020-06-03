@@ -49,7 +49,9 @@ const coc = require('code-conduct');
 
 ```js
 console.log(coc.iw());
-/* => # קוד התנהגות לתורם
+/* =>
+
+# קוד התנהגות לתורם
 
 ## ההתחייבות שלנו
 
