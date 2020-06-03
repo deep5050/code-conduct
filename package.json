@@ -1,0 +1,31 @@
+{
+  "name": "code-conduct",
+  "version": "1.0.1",
+  "description": "Exports Code-Of-Conduct In 28 Different Languages :)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deep5050/code-conduct.git"
+  },
+  "keywords": [
+    "code-of-conduct",
+    "conduct",
+    "covegen",
+    "git",
+    "documentation",
+    "doc",
+    "README",
+    "OSS",
+    "github",
+    "contribute"
+  ],
+  "author": "Dipankar Pal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deep5050/code-conduct/issues"
+  },
+  "homepage": "https://github.com/deep5050/code-conduct#readme"
+}
