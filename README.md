@@ -385,4 +385,4 @@ console.log(coc.all_langs());
 MIT (C) 2020 Dipankar Pal
 
 ## Related
-[autobadge](github.com/deep5050/autobadge) . [qikstart](github.com/deep5050/qikstart) . [qikQR](github.com/deep5050/qikQR)
+[autobadge](https://github.com/deep5050/autobadge) . [qikstart](https://github.com/deep5050/qikstart) . [qikQR](https://github.com/deep5050/qikQR)
