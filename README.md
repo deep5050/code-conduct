@@ -47,6 +47,7 @@
 Run `npm install code-conduct` Or `yarn add code-conduct` :zap:
 
 ## Usage
+
 For complete Documentation see : [code-conduct](https://deep5050.github.io/code-conduct)
 
 
@@ -55,7 +56,6 @@ const coc = require('code-conduct');
 ```
 ### `lang_id`()
 
-`@returns` code of conduct of the language id
 
 ```js
 console.log(coc.en());
@@ -85,10 +85,6 @@ include:
 ```
 
 ### get_coc(lang_id)
-
-`@param` lang_id
-
-`@returns` code of conduct text
 
 ```js
 console.log(coc.get_coc("bn"));
@@ -123,17 +119,12 @@ console.log(coc.get_coc("bn"));
 
 ### get_code(lang_name)
 
-`@param` lang_name
-
-`@returns` lang_id
-
 
 ```js
 console.log(coc.get_code("English"));
 // => en
 ```
 ### supported_lang()
-`@returns` lang_id[]
 
 ```js
 console.log(coc.supported_langs());
@@ -152,8 +143,6 @@ console.log(coc.supported_langs());
 ```
 
 ### get_lang(language_id)
-`@param` lang_id
-`@returns` lang_name
 
 ```js
 console.log(coc.get_lang("ko"));
@@ -161,7 +150,6 @@ console.log(coc.get_lang("ko"));
 ```
 ### all_langs()
 
-`@returns` {lang_id:lang_name}
 
 ```js
 console.log(coc.all_langs());
@@ -189,207 +177,85 @@ console.log(coc.all_langs());
   ar_tn: 'Arabic (Tunisia)',
   ar_ye: 'Arabic (Yemen)',
   as: 'Assamese',
-  ay: 'Aymara',
-  az: 'Azeri',
-  ba: 'Bashkir',
-  be: 'Belarusian',
-  bg: 'Bulgarian',
-  bh: 'Bihari',
-  bi: 'Bislama',
-  bn: 'Bengali',
-  bo: 'Tibetan',
-  br: 'Breton',
-  bs: 'Bosnian',
-  ca: 'Catalan',
-  co: 'Corsican',
-  cs: 'Czech',
-  cy: 'Welsh',
-  da: 'Danish',
-  de: 'German',
-  de_at: 'German (Austria)',
-  de_ch: 'German (Switzerland)',
-  de_li: 'German (Liechtenstein)',
-  de_lu: 'German (Luxembourg)',
-  div: 'Divehi',
-  dz: 'Bhutani',
-  el: 'Greek',
-  en: 'English',
-  en_au: 'English (Australia)',
-  en_bz: 'English (Belize)',
-  en_ca: 'English (Canada)',
-  en_gb: 'English (United Kingdom)',
-  en_ie: 'English (Ireland)',
-  en_jm: 'English (Jamaica)',
-  en_nz: 'English (New Zealand)',
-  en_ph: 'English (Philippines)',
-  en_tt: 'English (Trinidad)',
-  en_us: 'English (United States)',
-  en_za: 'English (South Africa)',
-  en_zw: 'English (Zimbabwe)',
-  eo: 'Esperanto',
-  es: 'Spanish',
-  es_ar: 'Spanish (Argentina)',
-  es_bo: 'Spanish (Bolivia)',
-  es_cl: 'Spanish (Chile)',
-  es_co: 'Spanish (Colombia)',
-  es_cr: 'Spanish (Costa Rica)',
-  es_do: 'Spanish (Dominican Republic)',
-  es_ec: 'Spanish (Ecuador)',
-  es_es: 'Spanish (España)',
-  es_gt: 'Spanish (Guatemala)',
-  es_hn: 'Spanish (Honduras)',
-  es_mx: 'Spanish (Mexico)',
-  es_ni: 'Spanish (Nicaragua)',
-  es_pa: 'Spanish (Panama)',
-  es_pe: 'Spanish (Peru)',
-  es_pr: 'Spanish (Puerto Rico)',
-  es_py: 'Spanish (Paraguay)',
-  es_sv: 'Spanish (El Salvador)',
-  es_us: 'Spanish (United States)',
-  es_uy: 'Spanish (Uruguay)',
-  es_ve: 'Spanish (Venezuela)',
-  et: 'Estonian',
-  eu: 'Basque',
-  fa: 'Farsi',
-  fa_ir: 'Farsi (Iran)',
-  fi: 'Finnish',
-  fj: 'Fiji',
-  fo: 'Faeroese',
-  fr: 'French',
-  fr_be: 'French (Belgium)',
-  fr_ca: 'French (Canada)',
-  fr_ch: 'French (Switzerland)',
-  fr_lu: 'French (Luxembourg)',
-  fr_mc: 'French (Monaco)',
-  fy: 'Frisian',
-  ga: 'Irish',
-  gd: 'Gaelic',
-  gl: 'Galician',
-  gn: 'Guarani',
-  gu: 'Gujarati',
-  ha: 'Hausa',
-  he: 'Hebrew',
-  hi: 'Hindi',
-  hr: 'Croatian',
-  hu: 'Hungarian',
-  hy: 'Armenian',
-  ia: 'Interlingua',
-  id: 'Indonesian',
-  ie: 'Interlingue',
-  ik: 'Inupiak',
-  in: 'Indonesian',
-  is: 'Icelandic',
-  it: 'Italian',
-  it_ch: 'Italian (Switzerland)',
-  iw: 'Hebrew',
-  ja: 'Japanese',
-  ji: 'Yiddish',
-  jw: 'Javanese',
-  ka: 'Georgian',
-  kk: 'Kazakh',
-  kl: 'Greenlandic',
-  km: 'Cambodian',
-  kn: 'Kannada',
-  ko: 'Korean',
-  kok: 'Konkani',
-  ks: 'Kashmiri',
-  ku: 'Kurdish',
-  ky: 'Kirghiz',
-  kz: 'Kyrgyz',
-  la: 'Latin',
-  ln: 'Lingala',
-  lo: 'Laothian',
-  ls: 'Slovenian',
-  lt: 'Lithuanian',
-  lv: 'Latvian',
-  mg: 'Malagasy',
-  mi: 'Maori',
-  mk: 'FYRO Macedonian',
-  ml: 'Malayalam',
-  mn: 'Mongolian',
-  mo: 'Moldavian',
-  mr: 'Marathi',
-  ms: 'Malay',
-  mt: 'Maltese',
-  my: 'Burmese',
-  na: 'Nauru',
-  nb_no: 'Norwegian (Bokmal)',
-  ne: 'Nepali (India)',
-  nl: 'Dutch',
-  nl_be: 'Dutch (Belgium)',
-  nn_no: 'Norwegian',
-  no: 'Norwegian (Bokmal)',
-  oc: 'Occitan',
-  om: '(Afan)/Oromoor/Oriya',
-  or: 'Oriya',
-  pa: 'Punjabi',
-  pl: 'Polish',
-  ps: 'Pashto/Pushto',
-  pt: 'Portuguese',
-  pt_br: 'Portuguese (Brazil)',
-  qu: 'Quechua',
-  rm: 'Rhaeto_Romanic',
-  rn: 'Kirundi',
-  ro: 'Romanian',
-  ro_md: 'Romanian (Moldova)',
-  ru: 'Russian',
-  ru_md: 'Russian (Moldova)',
-  rw: 'Kinyarwanda',
-  sa: 'Sanskrit',
-  sb: 'Sorbian',
-  sd: 'Sindhi',
-  sg: 'Sangro',
-  sh: 'Serbo_Croatian',
-  si: 'Singhalese',
-  sk: 'Slovak',
-  sl: 'Slovenian',
-  sm: 'Samoan',
-  sn: 'Shona',
-  so: 'Somali',
-  sq: 'Albanian',
-  sr: 'Serbian',
-  ss: 'Siswati',
-  st: 'Sesotho',
-  su: 'Sundanese',
-  sv: 'Swedish',
-  sv_fi: 'Swedish (Finland)',
-  sw: 'Swahili',
-  sx: 'Sutu',
-  syr: 'Syriac',
-  ta: 'Tamil',
-  te: 'Telugu',
-  tg: 'Tajik',
-  th: 'Thai',
-  ti: 'Tigrinya',
-  tk: 'Turkmen',
-  tl: 'Tagalog',
-  tn: 'Tswana',
-  to: 'Tonga',
-  tr: 'Turkish',
-  ts: 'Tsonga',
-  tt: 'Tatar',
-  tw: 'Twi',
-  uk: 'Ukrainian',
-  ur: 'Urdu',
-  uz: 'Uzbek',
-  vi: 'Vietnamese',
-  vo: 'Volapuk',
-  wo: 'Wolof',
-  xh: 'Xhosa',
-  yi: 'Yiddish',
-  yo: 'Yoruba',
-  zh: 'Chinese',
-  zh_cn: 'Chinese (China)',
-  zh_hk: 'Chinese (Hong Kong SAR)',
-  zh_mo: 'Chinese (Macau SAR)',
-  zh_sg: 'Chinese (Singapore)',
-  zh_tw: 'Chinese (Taiwan)',
-  zu: 'Zulu'
+  ay: 'Aymara', ................
 }
 
 
 */
 ```
+## API
+## Modules
+
+<dl>
+<dt><a href="#module_all_langs">all_langs</a> ⇒ <code>Object</code></dt>
+<dd><p>A module that returns a list of all languages</p>
+</dd>
+<dt><a href="#module_supported_langs">supported_langs</a> ⇒ <code>Array.&lt;string&gt;</code></dt>
+<dd><p>A module that exports an array of all languages id supported by code-conduct till now</p>
+</dd>
+<dt><a href="#module_get_code">get_code</a> ⇒ <code>string</code></dt>
+<dd><p>A module to get language Id of a language</p>
+</dd>
+<dt><a href="#module_get_lang">get_lang</a> ⇒ <code>string</code></dt>
+<dd><p>A module to get language name from a language ID</p>
+</dd>
+<dt><a href="#module_get_coc">get_coc</a> ⇒ <code>string</code></dt>
+<dd><p>A module to export code-of-conduct text for a language ID</p>
+</dd>
+</dl>
+
+---
+
+<a name="module_all_langs"></a>
+
+## all\_langs ⇒ <code>Object</code>
+A module that returns a list of all languages
+
+**Returns**: <code>Object</code> - - Object of all language in { id : name } format  
+<a name="module_supported_langs"></a>
+
+## supported\_langs ⇒ <code>Array.&lt;string&gt;</code>
+A module that exports an array of all languages id supported by code-conduct till now
+
+**Returns**: <code>Array.&lt;string&gt;</code> - - Array of supported language IDs  
+**Author**: Dipankar Pal <dipankarpal5050@gmail.com>  
+<a name="module_get_code"></a>
+
+## get\_code ⇒ <code>string</code>
+A module to get language Id of a language
+
+**Returns**: <code>string</code> - - Language ID for the given language name  
+**Author**: Dipankar Pal <dipankarpal5050@gmail.com>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| lang_name | <code>string</code> | An exact language name |
+
+<a name="module_get_lang"></a>
+
+## get\_lang ⇒ <code>string</code>
+A module to get language name from a language ID
+
+**Returns**: <code>string</code> - - Language name for the language_id  
+**Author**: Dipankar Pal <dipankarpal5050@gmail.com>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| lang_id | <code>string</code> | Language ID of a language |
+
+<a name="module_get_coc"></a>
+
+## get\_coc ⇒ <code>string</code>
+A module to export code-of-conduct text for a language ID
+
+**Returns**: <code>string</code> - - Code-of-conduct for the language  
+**Author**: Dipankar Pal <dipankarpal5050@gmail.com>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| lang_id | <code>string</code> | Language ID of the intended Language |
+
+
 
 ## License
 MIT (C) 2020 Dipankar Pal
