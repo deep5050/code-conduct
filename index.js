@@ -1,3 +1,12 @@
+//@ts-check
+
+/**
+ * A module that returns a list of all languages 
+ * @module all_langs
+ * @returns {Object} - Object of all language in { id : name } format
+ * 
+ */
+
 module.exports.all_langs = () => {
   return {
 
@@ -224,41 +233,67 @@ module.exports.all_langs = () => {
 }
 
 
-
+/**
+ * A module that exports an array of all languages id supported by code-conduct till now
+ * @module supported_langs
+ * @author Dipankar Pal <dipankarpal5050@gmail.com>
+ * @returns {string[] } - Array of supported language IDs
+ * 
+ */
 module.exports.supported_langs = () => {
   return ['bn', 'bs', 'de', 'el', 'en', 'es', 'fa_ir', 'fr', 'hi', 'id', 'is', 'iw', 'ja', 'kn', 'ko', 'mk', 'nl', 'pl', 'pt_br', 'pt', 'ro', 'ru', 'sl', 'sv', 'tr', 'uk', 'zh_cn', 'zh_tw'];
 }
 
 
-module.exports.get_code = (user_lang) => {
-  langs = this.all_langs();
+
+/**
+ * A module to get language Id of a language
+ * @module get_code
+ * @author "Dipankar Pal <dipankarpal5050@gmail.com>"
+ * @param {string} lang_name - An exact language name 
+ * @returns {string} - Language ID for the given language name
+ */
+module.exports.get_code = (lang_name) => {
+  const langs = this.all_langs();
   var name = "";
   var to_return = "";
   Object.keys(langs).forEach(function (key) {
     name = langs[key];
 
-    if (name.toString().trim() === user_lang) {
+    if (name.toString().trim() === lang_name) {
       to_return = key;
     }
   });
   return to_return;
 }
 
-module.exports.get_lang = (code) => {
-  langs = this.all_langs();
-  var name = "";
+/**
+ * A module to get language name from a language ID
+ * @module get_lang
+ * @author "Dipankar Pal <dipankarpal5050@gmail.com>"
+ * @param {string} lang_id - Language ID of a language
+ * @returns {string} - Language name for the language_id
+ */
+module.exports.get_lang = (lang_id) => {
+  const langs = this.all_langs();
   var to_return = "";
   Object.keys(langs).forEach(function (key) {
 
-    if (key.toString().trim() === code) {
+    if (key.toString().trim() === lang_id) {
       to_return = langs[key];
     }
   });
   return to_return;
 }
-
-module.exports.get_coc = (id) => {
-  return this[id]();
+/**
+ * A module to export code-of-conduct text for a language ID
+ * @module get_coc
+ * @author Dipankar Pal <dipankarpal5050@gmail.com>
+ * @param {string} lang_id - Language ID of the intended Language
+ * @returns {string} - Code-of-conduct for the language
+ */
+module.exports.get_coc = (lang_id) => {
+  return this[lang_id]();
 }
 
 module.exports.bn = () => {
