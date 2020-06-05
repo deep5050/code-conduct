@@ -1,7 +1,9 @@
 
-<p align="center"> <img src="https://i.imgur.com/TXs4hCy.jpg" title="source: imgur.com" /></p>
+<p align="center"> <img src="https://i.imgur.com/YVmCj1H.png" title="CODE-CONDUCT"  /></p>
+
+
 <div align="center">
-<p align="center" ><h1 align="center"> code-conduct </h1></p>
+<p align="center" ><h1 align="center"> CODE-CONDUCT </h1></p>
 </div>
 <p align="center"> Exports Code-Of-conduct In <b>28</b> Different Languages :)</p>
 <p align="center"><a href="https://github.com/deep5050/code-conduct/actions?query=workflow%3Anpm-publish"><img src="https://img.shields.io/github/workflow/status/deep5050/code-conduct/npm-publish?label=npm-publish&logo=github&style=for-the-badge"></a></p>
@@ -10,34 +12,35 @@
 <p align="center"> <a href="https://www.npmjs.com/package/code-conduct"><img alt="npm" src="https://img.shields.io/npm/dt/code-conduct?color=red&label=INSTALL&logo=npm&style=for-the-badge"></a></p>
 
 ## Supported Languages
-1. - [x] Bengali
-2. - [x] Bosnian
-3. - [x] German
-4. - [x] Greek
-5. - [x] English
-6. - [x] Spanish
-7. - [x] Farsi (Iran)
-8. - [x] French
-9. - [x] Hindi
-10. - [x] Indonesian
-11. - [x] Icelandic
-12. - [x] Hebrew
-13. - [x] Japanese
-14. - [x] Kannada
-15. - [x] Korean
-16. - [x] FYRO Macedonian
-17. - [x] Dutch
-18. - [x] Polish
-19. - [x] Portuguese (Brazil)
-20. - [x] Portuguese
-21. - [x] Romanian
-22. - [x] Russian
-23. - [x] Slovenian
-24. - [x] Swedish
-25. - [x] Turkish
-26. - [x] Ukrainian
-27. - [x] Chinese (China)
-28. - [x] Chinese (Taiwan)
+
+1. Bengali
+2. Bosnian
+3. German
+4. Greek
+5. English
+6. Spanish
+7. Farsi (Iran)
+8. French
+9. Hindi
+10. Indonesian
+11. Icelandic
+12. Hebrew
+13. Japanese
+14. Kannada
+15. Korean
+16. FYRO Macedonian
+17. Dutch
+18. Polish
+19. Portuguese (Brazil)
+20. Portuguese
+21. Romanian
+22. Russian
+23. Slovenian
+24. Swedish
+25. Turkish
+26. Ukrainian
+27. Chinese (China)
+28. Chinese (Taiwan)
 
 ## Install
 
@@ -47,7 +50,7 @@ Run `npm install code-conduct` Or `yarn add code-conduct` :zap:
 ```js
 const coc = require('code-conduct');
 ```
-### `language_id`()
+### `lang_id`()
 
 `@returns` code of conduct of the language id
 
@@ -78,9 +81,9 @@ include:
 */ 
 ```
 
-### get_coc(language_id)
+### get_coc(lang_id)
 
-`@param` language_id
+`@param` lang_id
 
 `@returns` code of conduct text
 
@@ -115,11 +118,11 @@ console.log(coc.get_coc("bn"));
 */
 ```
 
-### get_code(language_name)
+### get_code(lang_name)
 
-`@param` language_name
+`@param` lang_name
 
-`@returns` language_id
+`@returns` lang_id
 
 
 ```js
@@ -127,7 +130,7 @@ console.log(coc.get_code("English"));
 // => en
 ```
 ### supported_lang()
-`@returns` language_id[]
+`@returns` lang_id[]
 
 ```js
 console.log(coc.supported_langs());
@@ -146,8 +149,8 @@ console.log(coc.supported_langs());
 ```
 
 ### get_lang(language_id)
-`@param` language_id
-`@returns` language_name
+`@param` lang_id
+`@returns` lang_name
 
 ```js
 console.log(coc.get_lang("ko"));
@@ -155,7 +158,7 @@ console.log(coc.get_lang("ko"));
 ```
 ### all_langs()
 
-`@returns` {language_id:language_name}
+`@returns` {lang_id:lang_name}
 
 ```js
 console.log(coc.all_langs());
@@ -390,3 +393,8 @@ MIT (C) 2020 Dipankar Pal
 
 ## Related
 [autobadge](https://github.com/deep5050/autobadge) . [qikstart](https://github.com/deep5050/qikstart) . [qikQR](https://github.com/deep5050/qikQR)
+
+
+## Thanks
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/photo3idea-studio" title="photo3idea_studio">photo3idea_studio</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
