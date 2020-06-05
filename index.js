@@ -249,7 +249,7 @@ module.exports.supported_langs = () => {
 /**
  * A module to get language Id of a language
  * @module get_code
- * @author "Dipankar Pal <dipankarpal5050@gmail.com>"
+ * @author Dipankar Pal <dipankarpal5050@gmail.com>
  * @param {string} lang_name - An exact language name 
  * @returns {string} - Language ID for the given language name
  */
@@ -270,7 +270,7 @@ module.exports.get_code = (lang_name) => {
 /**
  * A module to get language name from a language ID
  * @module get_lang
- * @author "Dipankar Pal <dipankarpal5050@gmail.com>"
+ * @author Dipankar Pal <dipankarpal5050@gmail.com>
  * @param {string} lang_id - Language ID of a language
  * @returns {string} - Language name for the language_id
  */
