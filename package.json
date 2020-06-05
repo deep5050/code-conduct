@@ -4,8 +4,11 @@
   "description": "Exports Code-Of-Conduct In 28 Different Languages :)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "generate-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose"
+    
   },
+  "files": ["index.js"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/deep5050/code-conduct.git"
@@ -27,5 +30,9 @@
   "bugs": {
     "url": "https://github.com/deep5050/code-conduct/issues"
   },
-  "homepage": "https://github.com/deep5050/code-conduct#readme"
+  "homepage": "https://github.com/deep5050/code-conduct#readme",
+  "devDependencies": {
+    "clean-jsdoc-theme": "^2.2.11",
+    "jsdoc": "^3.6.4"
+  }
 }
