@@ -34,8 +34,6 @@
   "homepage": "https://github.com/deep5050/code-conduct#readme",
   "devDependencies": {
     "clean-jsdoc-theme": "^2.2.11",
-    "jsdoc": "^3.6.4",
-    "minami": "^1.2.3",
-    "tidy-jsdoc": "^1.4.0"
+    "jsdoc": "^3.6.4"
   }
 }
